@@ -1,0 +1,86 @@
+.container {
+  .page-logo {
+    background-image: url('../../../assets/images/hi-5.svg');
+  }
+
+  .title {
+
+    .arrow-forward {
+      color: #f9b01e;
+      display: inline-block;
+      font-size: 30px;
+      ion-icon {
+        // top: 2px;
+      }
+    }
+  }
+
+  .socical-media {
+    &-share {
+
+    }
+    .facebook {
+      font-size: 40px;
+      color: #4267b2;
+      vertical-align: middle;
+    }
+  }
+
+  .button-done {
+    padding: 10px 0;
+    border: 1px solid #f9b01e;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #f9b01e;
+    color: #ffffff;
+    &:focus {
+      outline:0;
+    }
+  }
+}
+
+.footer{
+  font-size: 20px;
+  font-weight: 500;
+  .content {
+    width: 100%;
+    a ion-icon{
+      margin-top: 6px;
+    }
+    .step {
+      font-size: 20px;
+      margin: 0 10px;
+      &.done {
+        color: #f9b01e;
+        font-weight: bold;
+      }
+    }
+    .back {
+      color: #f9b01e;
+    }
+    .next {
+      color: #f9b01e;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    // overwrite the reboots.scss
+    a:not([href]):not([tabindex]) {
+      color: #f9b01e;
+      text-decoration: none;
+
+      &.disabled {
+        pointer-events: none;
+        color: #808080;
+        cursor: not-allowed; 
+      }
+    }
+    .disabled {
+      pointer-events: none;
+      color: #808080;
+      cursor: not-allowed; 
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../../theme/variables.scss";
+
+.container {
+  .hand {
+    background-image: url('../../../assets/images/hand.svg');
+    background-size: 49px 63px;
+    display: block;
+    width: 49px;
+    height: 63px;
+  }
+  .menu {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    .my-custom-menu {
+      --width: 500px;
+    }
+  }
+  .homelessness{
+    // font-size: 16px;
+    font-size: 24px; //1.5x 
+    // font-size: 32px;
+  }
+}
+
+.footer{
+
+  .content {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+
+    img {
+      margin-right: 1rem;
+    }
+    p {
+      font-size: 21px;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  }
+
+  .tap-to-call {
+    padding-bottom: 10px;
+    ion-button {
+      width: 225px;
+    }
+    .phone {
+      background-image: url('../../../assets/images/phone.svg');
+      background-size: 15px 15px;
+      display: block;
+      text-indent: -9999px;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+  }
+}

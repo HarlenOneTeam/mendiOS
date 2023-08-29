@@ -1,0 +1,189 @@
+.container {
+  .page-logo {
+    background-image: url('../../../assets/images/clipboard.svg');
+  }
+
+  label {
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .label-location {
+    line-height: 49px;
+    margin-right: 20px;
+    label {
+      margin-left: 16px;
+    }
+  }
+
+  .gender-items {
+    padding: 0px 25px;
+    .gender-item-wrapper {
+      padding: 0.25rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      .gender-item {
+        padding: 10px 0;
+        border: 1px solid #f9b01e;
+        border-radius: 5px;
+        background-color: #ffffff;
+        font-weight: bold;
+        color: #f9b01e;
+        text-transform: capitalize;
+        width: 100%;
+        &.checked {
+          background-color: #f9b01e;
+          color: #ffffff;
+        }
+        &:focus {
+          outline:0;
+        }
+      }
+    }
+  }
+
+  .address {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    .clear {
+      position: absolute;
+      top: 13px;
+      right: 8px;
+    }
+    input {
+      border: 1px solid #f9b01e;
+      width: 100%;
+      padding: 10px 28px 10px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .gender {
+    // padding: 8px;
+  }
+
+  .datetime-wrapper {
+    .datetime {
+      border: 1px solid #f9b01e;
+      border-radius: 5px;
+    }
+  }
+
+  .address-auto-complete-wrapper {
+    position: relative;
+    width: 100%;
+    .auto-complete {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      &-item {
+        padding: 7px 7px;
+        background-color: #ffffff;
+        border: 1px solid #f9b01e;
+        white-space: nowrap;
+        text-align: left;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+  ion-segment {
+    ion-segment-button {
+      border: 1px solid #f9b01e;
+      color: #f9b01e;
+      margin: 2px;
+      border-radius: 4px;
+      text-transform: capitalize;
+      &.segment-button-checked {
+        background-color: #f9b01e;
+        color: #ffffff;
+      }
+    }
+
+    segment-button:not(:first-of-type) {
+      border-left-width: 0;
+    }
+  }
+
+  #map_canvas {
+    width: 90%;
+    height: 80%;
+    border: 1px solid red;
+  }
+  
+  #address {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #map {
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .map-wrapper {
+    position: relative;
+  
+    .current-location {
+      position: absolute;
+      z-index: 99;
+      height: 40px;
+      width: 40px;
+      top: 0;
+      right: 130px;
+    }
+
+    #map_center {
+      position: absolute;
+      z-index: 99;
+      height: 40px;
+      width: 40px;
+      top: 50%;
+      left: 50%;
+      margin-left: -21px;
+      margin-top: -41px;
+    }
+  }
+}
+
+.footer{
+  font-size: 20px;
+  font-weight: 500;
+  .content {
+    width: 100%;
+    a ion-icon{
+      margin-top: 6px;
+    }
+    .step {
+      font-size: 20px;
+      margin: 0 10px;
+      &.done {
+        color: #f9b01e;
+        font-weight: bold;
+      }
+    }
+    .back {
+      color: #f9b01e;
+    }
+    .next {
+      color: #f9b01e;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .disabled {
+      pointer-events: none;
+      color: #808080;
+      cursor: not-allowed; 
+    }
+  }
+}

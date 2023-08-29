@@ -1,0 +1,54 @@
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="logo"></div>
+      </div>
+      <div class="col-3">
+        <div class="menu">
+          <ion-toolbar>
+            <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+        </ion-toolbar>
+        </div>
+      </div>
+    </div>
+    <div class="row px-4">
+      <div class="col-12">
+        <div class="hand"></div>
+      </div>
+      <div class="col-12 mt-3">
+        <div class="title my-2">Care. Share. Connect.</div>
+        <p class="mt-4">
+          <strong>
+            In just 30 seconds you can connect someone dealing with <span class="homelessness">homelessness </span>with a service that can help them.
+          </strong></p>
+      </div>
+    </div>
+    <div class="row px-4">
+      <div class="col-12 mb-2">
+        <ion-button *ngIf="!updateRequired" expand="block" routerLink="/case" class="create-case" routerDirection="root">CREATE A FLAG
+        </ion-button>
+        <ion-button *ngIf="updateRequired" expand="block" (click)="openUpdateLink()" class="create-case" routerDirection="root">Please update app
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-toolbar>
+    <div class="content">
+      <img src="../../assets/images/siren.svg" alt="">
+      <p class="my-2">If this is an emergency, call <strong>000</strong></p>
+    </div>
+    <div class="tap-to-call d-flex justify-content-center">
+      <ion-button color="danger" (click)="tapToCall('000')"><i class="phone">phone</i>Tap to call</ion-button>
+    </div>
+  </ion-toolbar>
+  <section class="full-width">
+    <ion-button expand="full" color="primary" (click)="tapToCall('1800152152')">Need a bed tonight? Call Link2Home
+    </ion-button>
+  </section>
+</ion-footer>

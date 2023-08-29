@@ -1,0 +1,52 @@
+<ion-content>
+  <form [formGroup]="extraForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="page-logo"></div>
+        </div>
+        <div class="col-12 mt-4">
+          <div class="title my-2">Optional:<br /> Extra Details</div>
+          <p class="my-4">Please add further information about the person, if possible (max 300 characters).</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 px-4">
+          <ion-textarea class="extra-input" (ionBlur)="onChange('extra')" maxlength="300" mode="md" rows="6" cols="20" formControlName="extra"
+            placeholder="Some examples include: person was wearing red, saw her by the stairs, noticed 3 other people sleeping nearby, etc…">
+          </ion-textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="content">
+    <div class="row">
+      <div class="col-3 my-2">
+        <div class="text-center">
+          <a class="back" routerLink="/factors" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+        </div>
+      </div>
+      <div class="col-6 my-2">
+        <div class="text-center">
+          <span class="step done">1</span>
+          <span class="step done">2</span>
+          <span class="step done">3</span>
+          <span class="step">4</span>
+        </div>
+      </div>
+      <div class="col-3 my-2">
+        <div>
+          <a class="next" routerLink="/notification" routerDirection="root">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-footer>

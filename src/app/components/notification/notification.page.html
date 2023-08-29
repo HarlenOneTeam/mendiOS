@@ -1,0 +1,65 @@
+<ion-content>
+  <form [formGroup]="notificationForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="page-logo"></div>
+        </div>
+        <div class="col-12 my-4">
+          <div class="title my-2">Stay in the loop</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-2 px-4 notification-items">
+          <div><label>Do you want to receive an email when this case is picked up by an organisation?</label></div>
+          <div class="row px-3">
+            <div class="col-6 notification-item-wrapper">
+              <button type="button" class="notification-item" [class.checked]="isChecked('yes')" (click)="toggle('yes')" value="male">Yes</button>
+            </div>
+            <div class="col-6 notification-item-wrapper">
+              <button type="button" class="notification-item" [class.checked]="isChecked('no')" (click)="toggle('no')" value="unknown">No</button>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="showEmail" class="col-12 px-4">
+          <div><label>Email address</label></div>
+          <ion-input (ionBlur)="onChange('email')" formControlName="email" class="email-input" type="email" mode="md" inputmode="email" placeholder="jack.smith@email.com"></ion-input>
+        </div>
+      </div>
+      <div class="col-12">
+        <!-- {{ error }} -->
+      </div>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="content">
+    <div class="row">
+      <div class="col-3 my-2">
+        <div class="text-center">
+          <a class="back" routerLink="/extra" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+        </div>
+      </div>
+      <div class="col-6 my-2">
+        <div class="text-center">
+          <span class="step done">1</span>
+          <span class="step done">2</span>
+          <span class="step done">3</span>
+          <span class="step done">4</span>
+        </div>
+      </div>
+      <div class="col-3 my-2 p-0">
+        <div>
+          <a class="next" [class.disabled]="isDisabled()" (click)="submit()" routerDirection="root">Submit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-footer>
+  

@@ -1,0 +1,10 @@
+<div class="drop-down-wrapper">
+  <div class="selected-option" (click)="expand = !expand">
+    {{ selectedOption.display }} <span class="arrow"></span>
+  </div>
+  <div class="drop-down-options-wrapper" [class.expand]="expand">
+    <div *ngFor="let item of items" class="option-item" (click)="selectOption(item)">
+      {{ item.display }}
+    </div>
+  </div>
+</div> 

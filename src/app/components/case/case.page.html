@@ -1,0 +1,107 @@
+<ion-content>
+  <form [formGroup]="caseForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="page-logo"></div>
+        </div>
+        <div class="col-12 my-4">
+          <div class="title my-2">Who, where and when?</div>
+          <p class="my-3"><strong>Note:</strong> We discourage you to approach or engage with people directly during this process.
+            It is best to leave the communication to the organizations that receive your case.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-2 px-4">
+          <div><label>Age</label></div>
+          <app-drop-down
+            [selectedOption]="defaultAgeOption"
+            [items]="ageOptions"
+            (select)="onAgeSelect($event)"></app-drop-down>
+        </div>
+        <div class="col-12 mb-2 px-4 gender-items">
+          <div><label>Gender</label></div>
+          <div class="row px-3">
+            <div class="col-4 gender-item-wrapper">
+              <button type="button" class="gender-item" [class.checked]="isChecked('male')" (click)="toggle('male')" value="male">Male</button>
+            </div>
+            <div class="col-4 gender-item-wrapper">
+              <button type="button" class="gender-item" [class.checked]="isChecked('female')" (click)="toggle('female')" value="female">Female</button>
+            </div>
+            <div class="col-4 gender-item-wrapper">
+              <button type="button" class="gender-item" [class.checked]="isChecked('unsure')" (click)="toggle('unsure')" value="unsure">Unsure</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-2 pl-4 pr-1 datetime-wrapper">
+          <div><label>Date</label></div>
+          <ion-datetime class="datetime" (ionChange)="onChange('date')" display-format="DD/MM/YYYY" formControlName="date"></ion-datetime>
+        </div>
+        <div class="col-6 mb-2 pr-4 pl-1 datetime-wrapper">
+          <div><label>Time</label></div>
+          <ion-datetime class="datetime" (ionChange)="onChange('time')" displayFormat="HH:mm" formControlName="time"></ion-datetime>
+        </div>
+        <div class="col-12 mb-2 px-4">
+          <div><label>Location</label></div>
+          <div>
+            <div class="address">
+              <input #addressInput (click)="onClickAddress()" (blur)="onBlurAddress()"  formControlName="location" />
+              <div class="clear" (click)="clearAddress()"><ion-icon mode="md" name="close"></ion-icon></div>
+              <div class="address-auto-complete-wrapper">
+                <div *ngIf="showAutoComplete" class="auto-complete">
+                  <div *ngFor="let item of autocompleteItems" (click)="selectSearchResult(item)" class="auto-complete-item">
+                    {{ item.description }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 px-4">
+          <div class="map-wrapper">
+            <div class="current-location">
+              <ion-button (click)="getCurrentLocation()" shape="round" fill="outline">
+                <ion-icon slot="start" name="locate"></ion-icon>Where I Am
+              </ion-button>
+            </div>
+            <div id="map_center">
+              <img src="../../assets/icon/center-markerx40.png" />
+            </div>
+            <div #map id="map">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="content">
+    <div class="row">
+      <div class="col-3 my-2">
+        <div class="text-center">
+          <a class="back" routerLink="/" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+        </div>
+      </div>
+      <div class="col-6 my-2">
+        <div class="text-center">
+          <span class="step done">1</span>
+          <span class="step">2</span>
+          <span class="step">3</span>
+          <span class="step">4</span>
+        </div>
+      </div>
+      <div class="col-3 my-2">
+        <div>
+          <a class="next" [class.disabled]="isDisabled()" routerLink="/factors" routerDirection="root">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-footer>

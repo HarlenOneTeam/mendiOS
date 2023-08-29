@@ -1,0 +1,29 @@
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+
+.logo {
+  background-image: url('../assets/images/mend.svg');
+  background-size: 130px 100px;
+  display: block;
+  text-indent: -9999px;
+  width: 130px;
+  height: 100px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(75, 75, 75);
+  line-height: 0.85;
+}
+
+.page-logo {
+  background-size: 49px 63px;
+  display: block;
+  width: 49px;
+  height: 63px;
+}

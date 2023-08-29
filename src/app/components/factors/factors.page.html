@@ -1,0 +1,86 @@
+<ion-content>
+  <form [formGroup]="factorsForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="page-logo"></div>
+        </div>
+        <div class="col-12 my-4">
+          <div class="title my-2">Identifying factors</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-2 description-items">
+          <div><label class="label-description">Select items that describe the person.</label></div>
+          <div class="row px-3">
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('pets')" (click)="toggle('pets')" value="pets">Pets</button>
+            </div>
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('injured')" (click)="toggle('injured')" value="injured">Injured</button>
+            </div>
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('trolley')" (click)="toggle('trolley')" value="trolley">Trolley/bags</button>
+            </div>
+          </div>
+          <div class="row px-3">
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('withChild')" (click)="toggle('withChild')" value="withChild">With Child</button>
+            </div>
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('disabled')" (click)="toggle('disabled')" value="disabled">Disabled</button>
+            </div>
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('intoxicated')" (click)="toggle('intoxicated')" value="intoxicated">Intoxicated</button>
+            </div>
+          </div>
+          <div class="row px-3">
+            <div class="col-8 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('mentallyUnwel')" (click)="toggle('mentallyUnwel')" value="mentallyUnwel">Mentally Unwell</button>
+            </div>
+            <div class="col-4 p-1">
+              <button type="button" class="description-item" [class.checked]="isCheck('inCar')" (click)="toggle('inCar')" value="inCar">In Car</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2 frequency-wrapper">
+          <label position="stacked" class="label-frequency">Have you seen this person before?</label>
+          <app-drop-down
+            [selectedOption]="defaultFrequencyOption"
+            [items]="frequencyOptions"
+            (select)="onFrequencySelect($event)"></app-drop-down>
+        </div>
+      </div>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="content">
+    <div class="row">
+      <div class="col-3 my-2">
+        <div class="text-center">
+          <a class="back" routerLink="/case" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+        </div>
+      </div>
+      <div class="col-6 my-2">
+        <div class="text-center">
+          <span class="step done">1</span>
+          <span class="step done">2</span>
+          <span class="step">3</span>
+          <span class="step">4</span>
+        </div>
+      </div>
+      <div class="col-3 my-2">
+        <div>
+          <a class="next" [class.disabled]="isDisabled()" routerLink="/extra" routerDirection="root">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-footer>

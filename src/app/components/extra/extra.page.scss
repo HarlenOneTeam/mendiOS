@@ -1,0 +1,43 @@
+.container {
+  .page-logo {
+    background-image: url('../../../assets/images/speech_balloon.svg');
+  }
+
+  .extra-input {
+    border: 1px solid #f9b01e;
+    border-radius: 5px;
+  }
+}
+
+.footer{
+  font-size: 20px;
+  font-weight: 500;
+  .content {
+    width: 100%;
+    a ion-icon{
+      margin-top: 6px;
+    }
+    .step {
+      font-size: 20px;
+      margin: 0 10px;
+      &.done {
+        color: #f9b01e;
+        font-weight: bold;
+      }
+    }
+    .back {
+      color: #f9b01e;
+    }
+    .next {
+      color: #f9b01e;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .disabled {
+      pointer-events: none;
+      color: #808080;
+      cursor: not-allowed; 
+    }
+  }
+}

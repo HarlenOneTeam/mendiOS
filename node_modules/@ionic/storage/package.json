@@ -1,0 +1,62 @@
+{
+  "name": "@ionic/storage",
+  "version": "2.2.0",
+  "description": "Ionic Storage utility",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/ionic-storage.git"
+  },
+  "keywords": [
+    "ionic",
+    "angular",
+    "localforage",
+    "cordova",
+    "hybrid"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ionic-team/ionic-storage/issues"
+  },
+  "homepage": "https://github.com/ionic-team/ionic-storage#readme",
+  "dependencies": {
+    "localforage": "1.7.1",
+    "localforage-cordovasqlitedriver": "1.7.0",
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^5.2.11",
+    "@angular/compiler-cli": "^5.2.11",
+    "@angular/core": "^5.2.11",
+    "@types/node": "^6.0.41",
+    "canonical-path": "0.0.2",
+    "conventional-changelog-cli": "^2.0.1",
+    "cpr": "^2.0.0",
+    "dgeni": "0.4.9",
+    "dgeni-packages": "0.26.2",
+    "gulp": "^3.9.1",
+    "ng-packagr": "^3.0.1",
+    "np": "3.0.4",
+    "rimraf": "^2.6.2",
+    "rxjs": "5.5.2",
+    "semver": "^5.3.0",
+    "tslint": "^5.10.0",
+    "tslint-ionic-rules": "*",
+    "typescript": "^2.6.2",
+    "zone.js": "^0.8.26"
+  },
+  "peerDependencies": {
+    "@angular/core": "*",
+    "rxjs": "*"
+  },
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "main": "bundles/ionic-storage.umd.js",
+  "module": "fesm5/ionic-storage.js",
+  "es2015": "fesm2015/ionic-storage.js",
+  "esm5": "esm5/ionic-storage.js",
+  "esm2015": "esm2015/ionic-storage.js",
+  "fesm5": "fesm5/ionic-storage.js",
+  "fesm2015": "fesm2015/ionic-storage.js",
+  "typings": "ionic-storage.d.ts",
+  "metadata": "ionic-storage.metadata.json",
+  "sideEffects": false
+}

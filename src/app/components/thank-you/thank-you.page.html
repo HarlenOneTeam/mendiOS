@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="row px-4">
+      <div class="col-12">
+        <div class="page-logo"></div>
+      </div>
+      <div class="col-12 my-4">
+        <div class="title my-2">
+          Thank you for Caring <span class="arrow-forward"><ion-icon slot="start" name="md-arrow-forward"></ion-icon></span>
+          Sharing <span class="arrow-forward"><ion-icon slot="start" name="md-arrow-forward"></ion-icon></span> 
+          Connecting.
+        </div>
+        <p class="my-4">You’re making a real difference.</p>
+        <p class="my-4">We will now match your case with an organization that is best suited to help. And please know that you are making a real difference.</p>
+        <p class="my-4">With your recent submission we have now received over <strong>{{ total }}</strong> cases.</p>
+        <div class="socical-media">
+          <span class="socical-media-share">Share on : </span><ion-icon class="facebook" (click)="shareFacebook()" name="logo-facebook"></ion-icon>
+        </div>
+      </div>
+      <div class="col-12 mb-4 done">
+        <button type="button" class="button-done" (click)="done()">Done</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="content">
+  </div>
+</ion-footer>

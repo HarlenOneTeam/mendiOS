@@ -1,0 +1,26 @@
+{
+  "name": "@ng-bootstrap/schematics",
+  "version": "2.0.0-alpha.1",
+  "description": "ng-bootstrap schematics collection for angular-cli",
+  "keywords": [
+    "angular",
+    "ng-bootstrap",
+    "ng-add"
+  ],
+  "author": "https://github.com/ng-bootstrap/schematics/graphs/contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-bootstrap/schematics.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng-bootstrap/schematics/issues"
+  },
+  "homepage": "https://github.com/ng-bootstrap/schematics#readme",
+  "dependencies": {
+    "@angular-devkit/core": "^0.5.4",
+    "@angular-devkit/schematics": "^0.5.4",
+    "typescript": "~2.7.2"
+  },
+  "schematics": "./collection.json"
+}

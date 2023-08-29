@@ -1,0 +1,19 @@
+.back {
+  color: #f9b01e;
+}
+
+.next {
+  color: #f9b01e;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.clipboard {
+  width: 160px;
+  height: 230px;
+}
+
+.key {
+  text-transform: capitalize;
+}

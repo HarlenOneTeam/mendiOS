@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.1 (72631) - https://sketchapp.com -->
+    <title>68665AA0-ECD7-46DB-B531-DE4C8A16F9C7</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Mobile-R2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1ab" transform="translate(-30.000000, -567.000000)" fill="#FF1414" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(0.000000, 548.000000)">
+                <g id="Group-4" transform="translate(30.000000, 15.000000)">
+                    <g id="Group">
+                        <g id="siren" transform="translate(0.000000, 4.000000)">
+                            <g id="Shape-3" transform="translate(3.000000, 5.000000)">
+                                <path d="M1.36363636,5.52429668 L1.36363636,12.4226343 C0.569957364,12.6761509 0,13.3583759 0,14.1585678 L0,16 L15,16 L15,14.1585678 C15,13.3583759 14.4300426,12.6761509 13.6363636,12.4226343 L13.6363636,5.52429668 C13.6363636,2.47826087 10.8835227,0 7.5,0 C4.11647727,0 1.36363636,2.47826087 1.36363636,5.52429668 Z M13.6363636,14.7723785 L1.36363636,14.7723785 L1.36363636,14.1585678 C1.36363636,13.8201726 1.66956677,13.544757 2.04545455,13.544757 L12.9545455,13.544757 C13.3304332,13.544757 13.6363636,13.8201726 13.6363636,14.1585678 L13.6363636,14.7723785 Z M7.5,1.22762148 C10.1317472,1.22762148 12.2727273,3.15505113 12.2727273,5.52429668 L12.2727273,12.3171355 L2.72727273,12.3171355 L2.72727273,5.52429668 C2.72727273,3.15505113 4.86825282,1.22762148 7.5,1.22762148 Z" id="Shape"></path>
+                            </g>
+                            <polygon id="Path" points="10 9 11 9 11 13 10 13"></polygon>
+                            <polygon id="Path" points="10 15 11 15 11 16 10 16"></polygon>
+                            <polygon id="Path" points="0 10 3 10 3 11 0 11"></polygon>
+                            <polygon id="Path" points="18 10 21 10 21 11 18 11"></polygon>
+                            <polygon id="Path" points="17.9999386 2 19 3.00006139 17.0000614 5 16 3.99993861"></polygon>
+                            <polygon id="Path" points="4.00006136 5 2 3.00006139 2.99993864 2 5 3.99993861"></polygon>
+                            <polygon id="Path" points="10 0 11 0 11 3 10 3"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

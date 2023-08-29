@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-row>
+    <ion-col text-start padding-top>
+      <ion-title>
+        <a class="back" routerLink="/notification" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+      </ion-title>
+    </ion-col>
+    <ion-col text-end padding-top>
+      <ion-title><a class="next" routerLink="/thank-you" routerDirection="root">submit</a></ion-title>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ion-img class="clipboard mx-auto d-block" src="/assets/images/clipboard.svg"></ion-img>
+      </div>
+      <div *ngFor="let item of answers" class="col-12">
+        <span class="key">{{ item.id }}:</span><span> {{ item.value }}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

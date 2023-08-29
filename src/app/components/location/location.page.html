@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-row>
+    <ion-col text-start padding-top>
+      <ion-title>
+        <a class="back" routerLink="/" routerDirection="root"><ion-icon slot="start" name="md-arrow-back"></ion-icon></a>
+      </ion-title>
+    </ion-col>
+    <ion-col text-end padding-top>
+      <ion-title><a class="next" routerLink="/case" routerDirection="root">next</a></ion-title>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <div class="map-wrapper">
+    <div class="current-location">
+      <ion-button (click)="getCurrentLocation()" shape="round" fill="outline">
+        <ion-icon slot="start" name="locate"></ion-icon>Where I Am
+      </ion-button>
+    </div>
+    <div id="map_center">
+      <img src="../../assets/icon/center-markerx40.png" />
+    </div>
+    <div #map id="map">
+    </div>
+  </div>
+  <div id="address">
+    <span>{{ address }}</span>
+  </div>
+</ion-content>
